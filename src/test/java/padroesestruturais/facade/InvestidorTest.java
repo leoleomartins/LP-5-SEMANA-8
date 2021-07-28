@@ -7,17 +7,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class InvestidorTest {
 
     @Test
-    void deveRetornarPendenciaBibliotecaFechamento() {
+    void deveRetornarPendenciaAtendimentoFechamento() {
         Investidor investidor = new Investidor();
-        Biblioteca.getInstancia().addInvestidorPendente(investidor);
+        Atendimento.getInstancia().addInvestidorPendente(investidor);
 
         assertEquals(false, investidor.fecharConta());
     }
 
     @Test
-    void deveRetornarPendenciaSecretariaFechamento() {
+    void deveRetornarPendenciaGerenciaFechamento() {
         Investidor investidor = new Investidor();
-        Secretaria.getInstancia().addInvestidorPendente(investidor);
+        Gerencia.getInstancia().addInvestidorPendente(investidor);
 
         assertEquals(false, investidor.fecharConta());
     }
