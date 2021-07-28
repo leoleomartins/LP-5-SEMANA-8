@@ -5,14 +5,14 @@ import java.util.List;
 
 public abstract class Setor {
 
-    private List<Aluno> alunosComPendencia = new ArrayList<Aluno>();
+    private List<Investidor> investidoresComPendencia = new ArrayList<Investidor>();
 
-    public void addAlunoPendente(Aluno aluno) {
-        this.alunosComPendencia.add(aluno);
+    public void addInvestidorPendente(Investidor investidor) {
+        this.investidoresComPendencia.add(investidor);
     }
 
-    public boolean verificarAlunoComPendencia(Aluno aluno) {
-        return alunosComPendencia.contains(aluno);
+    public boolean verificarInvestidorComPendencia(Investidor investidor) {
+        return investidoresComPendencia.contains(investidor);
     }
 
 }
